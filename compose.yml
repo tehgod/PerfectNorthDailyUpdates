@@ -1,0 +1,5 @@
+version: "3"
+services:
+  skilling_gainz_bot:
+    image: perfect_north_emailer
+    restart: unless-stopped

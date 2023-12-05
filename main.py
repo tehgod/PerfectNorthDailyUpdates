@@ -43,9 +43,6 @@ if __name__=="__main__":
 
     while True:
 
-        # while IsItTime(time_to_run) != True:
-        #     sleep(30)
-        
         with open("secrets.json") as my_file:
             secrets = json.load(my_file)
 
@@ -63,4 +60,7 @@ if __name__=="__main__":
             password=password
         )
 
-        sleep(60)
+        sleep(61)
+
+        while IsItTime(time_to_run) != True:
+            sleep(30)
